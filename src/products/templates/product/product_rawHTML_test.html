@@ -1,0 +1,12 @@
+{% extends 'basic.html' %}
+
+{% block title %}
+<title>Raw_HTML</title>
+{% endblock %}
+
+{% block content %}
+<form action="." method="POST"> {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Save"/>
+</form>
+{% endblock %}

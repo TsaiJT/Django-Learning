@@ -1,0 +1,15 @@
+{% extends 'basic.html' %}
+
+{% block title %}
+<title>Product List</title>
+{% endblock %}
+
+{% block content %}
+    
+    <!-- In App: {{object.title}}, {{object.price}} -->
+
+
+    <p>{{object.id}} - {{object.title}}</p>
+
+    <input type="button" value="Return" onclick="location.href='{{object.get_productList_url}}'">
+{% endblock %}
